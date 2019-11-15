@@ -13,8 +13,6 @@ write and build your code locally as well.
 The starter code for this project is organized roughly as follows:
 
 ```
-bin/                               Student-compiled binaries
-
 sols/                              Staff-compiled binaries
   darwin_amd64/                    Staff-compiled Mac OS X executables
     crunner                        Staff-compiled TribClient-runner
@@ -30,7 +28,6 @@ src/github.com/cmu440/tribbler/
   tribserver/                      TODO: implement the TribServer
   libstore/                        TODO: implement the Libstore
   storageserver/                   TODO: implement the StorageServer
-  tribbler_<group_name>.pdf        TODO: submit final report
 
   util/                            Util functions
     keyFormatter.go                Format the key posted to storage server
