@@ -44,7 +44,7 @@ var (
 	// Debugging information (counts the total number of operations performed).
 	fs, as, rs, gt, pt, gtbs int
 	// Set this to true to print debug information.
-	debug bool
+	debug bool = true
 )
 
 func main() {

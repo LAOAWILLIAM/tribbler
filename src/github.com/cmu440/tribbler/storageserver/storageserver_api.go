@@ -14,13 +14,13 @@ type StorageServer interface {
 	SetAlive(alive bool)
 
 	// RegisterServer adds a storage server to the ring. It replies with
-	// status NotReady if not all nodes in the ring have joined. Once
-	// all nodes have joined, it should reply with status OK and a list
-	// of all connected nodes in the ring.
+	// status NotReady if not all servers in the ring have joined. Once
+	// all servers have joined, it should reply with status OK and a list
+	// of all connected servers in the ring.
 	RegisterServer(*storagerpc.RegisterArgs, *storagerpc.RegisterReply) error
 
-	// GetServers retrieves a list of all connected nodes in the ring. It
-	// replies with status NotReady if not all nodes in the ring have joined.
+	// GetServers retrieves a list of all connected servers in the ring. It
+	// replies with status NotReady if not all servers in the ring have joined.
 	GetServers(*storagerpc.GetServersArgs, *storagerpc.GetServersReply) error
 
 	// Get retrieves the specified key from the data store and replies with

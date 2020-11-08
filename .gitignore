@@ -5,3 +5,6 @@
 bin/
 pkg/
 
+#Idea
+.idea/
+
